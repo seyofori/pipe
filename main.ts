@@ -11,8 +11,8 @@
    *  return val + 1
    * }
    *
-   * const answer = pipe(1).then(add1).then(add1)
-   *       ^? 3
+   * const answer = pipe(1).then(add1).then(add1).end()
+   *       // ^? 3
    * ```
    */
 
