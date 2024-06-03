@@ -1,3 +1,21 @@
+  /**
+   * @module
+   *
+   * This module contains the pipe function
+   *
+   * @example
+   * ```ts
+   * import pipe from "@seyofori/pipe";
+   * 
+   * function add1(val: number){
+   *  return val + 1
+   * }
+   *
+   * const answer = pipe(1).then(add1).then(add1)
+   *       ^? 3
+   * ```
+   */
+
 class Pipe<T> {
   constructor(private value: T) {}
 
